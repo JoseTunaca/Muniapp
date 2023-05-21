@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Agregar Nueva Solicitud</ion-title>
+    <ion-avatar slot="end">
+      <img src="../../assets/logo municipalidad.png">
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ingrese los datos de su solicitud</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form>
+        <ion-item>
+          <ion-label position="floating">Tipo de Solicitud</ion-label>
+          <ion-select placeholder="Seleccione una opción">
+            <ion-select-option value="vereda">Vereda en mal estado</ion-select-option>
+            <ion-select-option value="calle">Calle en mal estado</ion-select-option>
+            <ion-select-option value="basura">Acumulación de basura</ion-select-option>
+            <ion-select-option value="escombro">Acumulación de escombro</ion-select-option>
+            <ion-select-option value="luminaria">Falla de luminaria</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Dirección</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>  
+          <ion-label position="floating">Descripción</ion-label>
+          <ion-input> </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Subir foto</ion-label>
+          <br>
+          <ion-input type="file" accept="image/*"></ion-input>
+        </ion-item>
+        <br>
+        <ion-button shape="round">
+          <ion-icon slot="start" name="add-circle-outline"></ion-icon>
+          Agregar Solicitud
+        </ion-button>
+        
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
